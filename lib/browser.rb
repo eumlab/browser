@@ -16,6 +16,7 @@ require "browser/methods/language"
 require "browser/methods/bots"
 require "browser/methods/tv"
 require "browser/methods/proxy"
+require "browser/methods/mobile_apps"
 
 require "browser/meta/base"
 require "browser/meta/generic_browser"
@@ -40,6 +41,7 @@ class Browser
   include Bots
   include Tv
   include Proxy
+  include MobileApps
 
   # Set browser's UA string.
   attr_accessor :user_agent
